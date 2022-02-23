@@ -17,7 +17,7 @@ public class ScoreEx {
 		 * 학생의 평점은 B입니다.
 		 */
 		
-		Scanner sc = new Scanner(system.in);
+		Scanner sc = new Scanner(System.in);
 		int score = 85;
 		String grade = null;
 		
@@ -28,7 +28,7 @@ public class ScoreEx {
 						score > 79 ? 'B':
 								score > 69 ? 'C':
 										score > 59 ? 'D':
-												score > -1 ? 'F';
+												score > -1 ? 'F':
 								System.out.println("학생의 평점은 " + grade + " 등급입니다");				
 			
 	}
