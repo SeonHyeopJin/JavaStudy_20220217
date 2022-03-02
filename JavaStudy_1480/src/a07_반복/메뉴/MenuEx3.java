@@ -63,21 +63,30 @@ public class MenuEx3 {
 				select = scanner.next().charAt(0);
 	
 				if(select == '1') {
-			    	System.out.println("롤을 실행합니다");
+			    	System.out.println("그림 폴더.");
 			    }else if(select == '2') {
-			    	System.out.println("크롬 프라우저를 실행합니다.");
+			    	System.out.println("음악 폴더.");
 			    }else if(select == 'b') {
-			    	System.out.println("뒤로가기");
-			    	secondFlag = false;
-			    }else (select = 'q') {
+                    System.out.println("뒤로가기");
+                    secondFlag = false;
+                }else (select = 'q') {
 			    	System.out.println("프로그램 종료중....");
 			    	firstFlag = false;
 			    	secondFlag = false;
 			    }else {
 			    	System.out.println("해당 프로그램 또는 폴더가 존재하지 않습니다.");
 			    }
-			    System.out.println("#########################
+			    System.out.println("#########################");
+		 }   
+		 }else if(select == 'q') {
+			    System.out.println("프로그램 종료중...");
+			    firstFlag = false;
+		 }else {
+			    System.out.println("해당 폴더는 존재하지 않습니다.");
 		 }
-		 
-		 
+		 System.out.println("-------------------------------");
+	}	 
+	System.out.println("프로그램이 종료되었습니다.");
+	
 	 }
+}	
