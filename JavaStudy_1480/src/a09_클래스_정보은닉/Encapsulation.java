@@ -18,17 +18,38 @@ public class Encapsulation {
 		   this.username = username + "@gmail.com";
 	   }else if(provider.equals("naver")) {
 		   this.username = username = "@naver.com";
-	   }
-	   
+	   }else {
+		   this.username = username;
+	   }   
    }
    
    public String getUsername() {
 	   return username;
    }
    
+   //getter
+   //public
+   
+   
    public void showInfo() {
 	   System.out.println(username);
 	   System.out.println(password);
 	   System.out.println(provider);
    }
+
+public String getPassword() {
+	return password;
+}
+
+public void setPassword(String password) {
+	this.password = password;
+}
+
+public String getProvider() {
+	return provider;
+}
+
+public void setProvider(String provider) {
+	this.provider = provider;
+}
 }

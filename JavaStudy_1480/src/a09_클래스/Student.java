@@ -35,10 +35,6 @@ public class Student {
 		this.studentPhone = studentPhone;
 		this.graduationFlag = graduationFlag;
 	}
-
-
-
-	}
     
     public void showStudentInfo() {
 	 System.out.println("학교명: " + schoolName);
