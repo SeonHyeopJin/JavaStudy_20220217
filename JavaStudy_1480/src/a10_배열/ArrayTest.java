@@ -24,6 +24,8 @@ public class ArrayTest {
 		}
 		
 		
+		
+		System.out.println("*************************************************");
 		/*
 		 * String 배열 10개의 공간을 생성
 		 * 가나다라마바사아자차
@@ -43,8 +45,8 @@ public class ArrayTest {
 		kor[8] = "자";
 		kor[9] = "차";
 		
-		for(int j = 0; j < kor.length + 1; j++) {
-		System.out.println(kor[j]);
+		for(int i = 0; i < kor.length + 1; i++) {
+		System.out.println(kor[i]);
 		}
 		
 	}
