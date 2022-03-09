@@ -22,7 +22,7 @@ public class InterfaceTest {
 		for(int i = 0; i < buttons.length; i++) {
 		buttons[i].onClick();
 		buttons[i].sendSignal();
-		
+		}
 	}
-
 }
+		
