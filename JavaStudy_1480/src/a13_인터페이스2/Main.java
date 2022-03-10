@@ -1,8 +1,6 @@
 package a13_인터페이스2;
 
-import a13_인터페이스2.controller.PageController;
 import a13_인터페이스2.view.IndexImpl;
-import a13_인터페이스2.view.InputImpl;
 
 public class Main {
 
