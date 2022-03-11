@@ -2,14 +2,15 @@ package a13_인터페이스2.view;
 
 import java.util.Scanner;
 
-import a10_배열.User;
+import a13_인터페이스2.model.User;
+
 
 public class InputImpl implements Input {
 	@Override
-	public char typedSelect(Scanner scannner) { //명령을 선택 입력후 해당 입력값 리턴
+	public char typedSelect(Scanner scanner) { //명령을 선택 입력후 해당 입력값 리턴
 		System.out.print("명령을 입력하세요: ");
 		char select = scanner.next().charAt(0);
-		scannner.nextLine();
+		scanner.nextLine();
 		return select;
 	}	
 	@Override
