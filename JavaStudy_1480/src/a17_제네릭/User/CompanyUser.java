@@ -5,16 +5,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class CompanyUser extends User {
 	
-	public CompanyUser(String username, String password, String name, String email, String bisinessNumber) { {
-		super(username, password, name, email);
-		this.businessNumber = businessNumber;
+		public CompanyUser(String username, String password, String name, String email, String bisinessNumber) {
+				super(username, password, name, email);
+				this.businessNumber = businessNumber;
 	}
+	
 	private String businessNumber;
-
 }

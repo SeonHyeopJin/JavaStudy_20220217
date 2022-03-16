@@ -8,11 +8,16 @@ package a09_클래스_정보은닉;
  * email(메일주소)
  * 
  */
+
 public class User {
 	private String username;
 	private String password;
 	private String name;
 	private String email;
+	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	public User(String username, String password, String name, String email) {
 		super();
@@ -20,10 +25,8 @@ public class User {
 		this.password = password;
 		this.name = name;
 		this.email = email;
-		
-		User
-		
-		
+	}	
+				
 	public String getUsername() {
 		return username;
 	}
@@ -49,10 +52,4 @@ public class User {
 		this.email = email;
 	}
 	
-	}
-	
-	
-	}	
-	
-	
-}
+}	

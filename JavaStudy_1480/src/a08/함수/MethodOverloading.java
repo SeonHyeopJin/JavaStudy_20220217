@@ -6,6 +6,7 @@ import java.util.Scanner;
  * 계산기
  * 입력
  * 첫번째 수 입력
+ * 
  * 사칙연산(+, -, *, /)
  * 
  * 두번째 수 입력
@@ -17,35 +18,98 @@ import java.util.Scanner;
  * calc()
  * 
  */
-
-public class MethodOverloading2 {
+public class MethodOverloading {
 	
-	public static String calc(String num1, String num2, char operator) {
-		String result = null;
+		public static String calc(Double num1, Double num2, char operator) {
+				String result = null;
 		
-		if(operator == '+') {
-			result = Double.toString(Double.parseDouble(num1) + Double
-		}else if(operator == '-') {	
+				if(operator == '+') {
+						result = Double.toString(num1 + num2);
+				}else if(operator == '-') {
+						result = Double.toString(num1 - num2);
+				}else if(operator == '*') {
+						result = Double.toString(num1 * num2);
+				}else if(operator == '/') {
+						result = Double.toString(num1 / num2);
+				}else {
+						result = "계산 할 수 없는 연산자 입니다.";
+				}
+				
+				return result;
 		}
-	}
+		
+		public static String calc(int num1, int num2, char operator) {
+			String result = null;
 	
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String num1 = null, num = null;
+			if(operator == '+') {
+					result = Integer.toString(num1 + num2);
+			}else if(operator == '-') {
+					result = Integer.toString(num1 - num2);
+			}else if(operator == '*') {
+					result = Integer.toString(num1 * num2);
+			}else if(operator == '/') {
+					result = Integer.toString(num1 / num2);
+			}else {
+					result = "계산 할 수 없는 연산자 입니다.";
+			}
+			
+			return result;
+		}
+		public static String calc(int num1, Double num2, char operator) {
+			String result = null;
+	
+			if(operator == '+') {
+					result = Double.toString(num1 + num2);
+			}else if(operator == '-') {
+					result = Double.toString(num1 - num2);
+			}else if(operator == '*') {
+					result = Double.toString(num1 * num2);
+			}else if(operator == '/') {
+					result = Double.toString(num1 / num2);
+			}else {
+					result = "계산 할 수 없는 연산자 입니다.";
+			}
+			
+			return result;
+		}
+		public static String calc(Double num1, int num2, char operator) {
+			String result = null;
+	
+			if(operator == '+') {
+					result = Double.toString(num1 + num2);
+			}else if(operator == '-') {
+					result = Double.toString(num1 - num2);
+			}else if(operator == '*') {
+					result = Double.toString(num1 * num2);
+			}else if(operator == '/') {
+					result = Double.toString(num1 / num2);
+			}else {
+					result = "계산 할 수 없는 연산자 입니다.";
+			}
+			
+			return result;
+		}
+		
+		public static void main(String[] args) {
+			Scanner scanner = new Scanner(System.in);
+		String num1 = null, num2 = null;
 		char operator = ' ';
 		
 		System.out.println("첫번째 수 입력:");
 		num1 = scanner.next();
 		
-		System.out.println();
+		System.out.println("연산할 기호를 선택하세요: ");
+		operator = scanner.next().charAt(0);
 		
+		System.out.println("두번째 수 입력: ");
+		num2 = scanner.next();
 		
+		System.out.println("결과1: " + calc(Double.parseDouble(num1), Double.parseDouble(num2), operator));
+		System.out.println("결과2: " + calc(Integer.parseInt(num1), Integer.parseInt(num2), operator));
+		System.out.println("결과3: " + calc(Integer.parseInt(num1), Double.parseDouble(num2), operator));
+		System.out.println("결과4: " + calc(Double.parseDouble(num1), Integer.parseInt(num2), operator));
 		
+		}	
 		
-		첫번째 수 입력 : 10
-		연산할 기호를 선택하세요: +
-		두번째 수 입력 : 30
+}	
 		
-	}
-
-}

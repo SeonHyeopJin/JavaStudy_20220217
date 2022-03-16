@@ -9,7 +9,7 @@ public class Tumbler extends Product {
 		
 	}
 	
-	public void tumblerTest(() {
+	public void tumblerTest() {
 		System.out.println("텀블러만 가지고 있는 메소드");
 	}
 	

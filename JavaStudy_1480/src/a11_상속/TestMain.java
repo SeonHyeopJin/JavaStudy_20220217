@@ -29,7 +29,7 @@ public class TestMain {
 		
 		//잘못된 다운캐스팅
 		Test1 tttt1 = new Test1();
-		Test ttt1 = tttt; //업캐스팅
+		Test tttt = tttt1; //업캐스팅
 		Test2 tttt2 = (Test2)tttt;
 	}
 	

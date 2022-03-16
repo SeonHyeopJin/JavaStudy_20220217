@@ -15,7 +15,7 @@ public class MenuEx {
 		System.out.println("3. 회원 삭제");
 		System.out.println("q. 프로그램 종료");
 		
-		System.out.println("명령을 선택하세요: ");
+		System.out.print("명령을 선택하세요: ");
 		select = scanner.next().charAt(0);
 		System.out.println("선택값 출력: " + select);
 		
@@ -26,18 +26,18 @@ public class MenuEx {
 		}else if(select == '3') {
 			
 		}else if(select == 'q')	{
-			System.out.println("프로그램 종료중...");
-			break;
+				System.out.println("프로그램 종료중...");
+				break;
 		}else {
-			System.out.println("해당 명령은 실행 할 수 없습니다.");
+			System.out.println("해당 명령은 선택할 수 없습니다.");
 		}
 		System.out.println();
-		}
+	}
 		
 		
 		
 		
-		System.out.println("프로그램이 종료되었습니다.");
+	System.out.println("프로그램이 종료되었습니다.");
 	
 	}
 

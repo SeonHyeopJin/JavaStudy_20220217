@@ -13,32 +13,34 @@ package a08.함수;
  *특징2. 매개변수의 자료형이 다르면 매개변수의 개수가 같아도 정의 할 수 있다.
  */
 
-public class MethodOverloading1 {
+public class MethodOverloading2 {
 	
-	public static void sum() {
-		System.out.println("매개변수가 없습니다.");
-	}
-	public static void sum(int a) {
-		System.out.println(a + "(을)를 출력합니다.");
-	}
-	public static void sum(int a, int b) {
-		System.out.println("a와 b의 합은 " + (a + b) + "입니다.");
-	}
+		public static void sum() {
+				System.out.println("매개변수가 없습니다.");
+		}
+		
+		public static void sum(int a) {
+				System.out.println(a + "(을)를 출력합니다.");
+		}
+		
+		public static void sum(int a, int b) {
+				System.out.println("a와 b의 합은 " + (a + b) + "입니다.");
+		}
 	
-	public static void sum(int a, double b) {
-		System.out.println("a와 b의 합은 " + (a + b) + "입니다.");
-	}
+		public static void sum(int a, double b) {
+				System.out.println("a와 b의 합은 " + (a + b) + "입니다.");
+		}
 	
-	public static void sum(String a, double b) {
-		System.out.println("a와 b의 합은 " + (Double.parseDouble(a) + b) + "입니다.");
-	}
+		public static void sum(String a, double b) {
+				System.out.println("a와 b의 합은 " + (Double.parseDouble(a) + b) + "입니다.");
+		}
 	
-	public static void main(String[] args) {
-		sum();
-		sum(1);
-		sum(10, 20);
-		sum(10, 2.5);
-		sum("10.7",(2.5);
-	}
+		public static void main(String[] args) {
+				sum();
+				sum(1);
+				sum(10, 20);
+				sum(10, 2.5);
+				sum("10.7",2.5);
+		}
 
 }

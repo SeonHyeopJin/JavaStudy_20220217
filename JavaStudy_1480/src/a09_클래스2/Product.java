@@ -25,38 +25,47 @@ package a09_클래스2;
  * 
  */
 
-public class Pruduct {
-	private int ProductCode;
-	private String ProductName;
+public class Product {
+	private int productCode;
+	private String productName;
 	
+	public Product() {
+		// TODO Auto-generated constructor stub
+	}
 	
-	
-	public int getProductCode() {
-		return ProductCode;
+	public Product(int productCode, String productName) {
+		super();
+		this.productCode = productCode;
+		this.productName = productName;
+	}
+
+
+public int getProductCode() {
+		return productCode;
 	}
 
 
 
 	public void setProductCode(int ProductCode) {
-		this.ProductCode = ProductCode;
+		this.productCode = productCode;
 	}
 
 
 
 	public String getProductName() {
-		return ProductName;
+		return productName;
 	}
 
 
 
-	public void setProductName(String ProductName) {
-		this.ProductName = ProductName;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 
 
 	public void showProduct() {
-		System.out.println("상품코드: " + ProductCode);
-		System.out.println("상품명: " + ProductName);
+		System.out.println("상품코드: " + productCode);
+		System.out.println("상품명: " + productName);
 	}
 }

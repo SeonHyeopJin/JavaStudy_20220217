@@ -1,1 +1,0 @@
-package a17_제네릭.User;

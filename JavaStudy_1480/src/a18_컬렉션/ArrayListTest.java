@@ -72,6 +72,4 @@ public class ArrayListTest {
 		System.out.println(strList);
 		}
 		
-	}
-	
-}	
+	}	
